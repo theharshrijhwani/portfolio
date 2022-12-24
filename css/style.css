@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Ubuntu&display=swap');
+
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #121212;
+    font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.logo{
+    filter: invert(100%);
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+.navbar{
+    display: flex;
+    color: antiquewhite;
+    justify-content: space-between;
+}
+
+.navbar-list li{
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    margin-top: 70px;
+    font-size: 20px;
+    margin-right: 80px;
+    color: grey;
+    font-weight: 1000;
+}
+
+.navbar-list li a{
+    text-decoration: none;
+    color: grey;
+}
+
+.navbar-list li a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    background-color: antiquewhite;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar-list li a:hover{
+    color: antiquewhite;
+}
+.navbar-list li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.home-image{
+    filter: invert(100%);
+}
+.home{
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 100px;
+    background-image: url('../imgs/bg.png');
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+.home h2{
+    font-size:40px;
+}
+
+.home p{
+    font-size: 25px;
+    text-decoration-line: underline;
+    text-decoration-color:yellow ;
+    text-underline-offset: 10px;
+}
+
+.content{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.border{
+    background: transparent;
+    color:yellow;
+}
+
+#about{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#heading-about{
+    color: white;
+    letter-spacing: 1.3em;
+    text-transform:uppercase;
+    text-align: center;
+    padding: 40px;
+}
+
+.about-text{
+    background-color: #222222;
+    text-align: center;
+    font-size: 20px;
+    color: whitesmoke;
+    line-height: 150px;
+}
+
+#projects{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#heading-projects{
+    color: white;
+    letter-spacing: 1.3em;
+    text-transform:uppercase;
+    text-align: center;
+    padding: 40px;
+}
+
+.project-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    color: antiquewhite;
+    text-align: center;
+    background-color: #222222;
+    padding: 50px;
+}
+
+.parallax, .interior{
+    width: 400px;
+    border: 2px solid #FF8AFB;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.link{
+    background-color: #969696;
+    padding: 10px 30px;
+    margin: 5px 0;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.link a{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
+
+.parallax p, .interior p{
+    margin: 60px;
+}
+
+#heading-contact{
+    color: white;
+    letter-spacing: 1.3em;
+    text-transform:uppercase;
+    text-align: center;
+    padding: 40px;
+}
+
+.sources{
+    background-color: #222222;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+
+.contact-image{
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-img{
+    margin-top: 70px;
+}
